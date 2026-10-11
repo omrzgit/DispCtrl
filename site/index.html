@@ -408,6 +408,8 @@ a.lrow:hover,a.lrow:focus-visible{background:var(--soft);outline:none}
 .cmd:hover{opacity:1;border-color:var(--a2)}
 .cmd svg{width:15px;height:15px;flex:none;margin-left:auto;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .alt{text-align:center;margin-top:26px;color:var(--dim);font-size:14px}
+.dl.os{grid-template-columns:repeat(2,1fr);margin-top:16px}
+.dl.os .card{position:relative}
 
 /* support */
 .donate{position:relative;overflow:hidden;border-radius:28px;border:1px solid var(--line);padding:52px;background:var(--bg2);
@@ -538,7 +540,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
   .brand{font-size:17px}.brand img{width:28px;height:28px}
   .navbtn{height:36px}.theme,.menu{width:36px}
   .glist{margin:0 -18px;padding:2px 18px}
-  .fgrid4,.dl,.legal{grid-template-columns:1fr}
+  .fgrid4,.dl,.dl.os,.legal{grid-template-columns:1fr}
   section{padding:64px 0}.donate{padding:36px 20px;border-radius:22px}.spot{padding:22px;gap:26px;border-radius:22px}
   h1{margin:20px auto 18px}
   .lead{margin-bottom:26px}
@@ -937,6 +939,21 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
         <h3>winget</h3>
         <p>The Store version, from a terminal. Updates with <code class="i">winget upgrade</code>.</p>
         <button class="cmd" id="wingetCmd" type="button" aria-label="Copy: winget install 9PNQWKNRGVR0 -s msstore">winget install 9PNQWKNRGVR0 -s msstore<svg viewBox="0 0 24 24"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></button>
+      </div>
+    </div>
+    <div class="dl os">
+      <div class="card reveal">
+        <div class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></div>
+        <h3>Linux</h3>
+        <p>DispCtrl for Linux, maintained by <a href="https://github.com/HaythmKenway">@HaythmKenway</a>: brightness over DDC/CI and the backlight, dimming and night light, from a command line and a window.</p>
+        <a class="btn ghost" href="https://snapcraft.io/dispctrl-linux">Get it from the Snap Store</a>
+        <a class="btn ghost" style="margin-top:8px" href="https://github.com/HaythmKenway/DispCtrl/blob/master/docs/LINUX.md">Every distribution</a>
+      </div>
+      <div class="card reveal">
+        <span class="badge soon">Coming soon</span>
+        <div class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg></div>
+        <h3>macOS</h3>
+        <p>Brightness for every display, built-in and external, with dimming and night light. In the works.</p>
       </div>
     </div>
     <p class="alt reveal">Prefer to build it yourself? <a href="https://github.com/jesvijonathan/DispCtrl#build-from-source">Build from source</a> with a single <code class="i">build.cmd</code>. Every release has its <a href="https://github.com/jesvijonathan/DispCtrl/releases">SHA-256 checksums</a> attached.</p>

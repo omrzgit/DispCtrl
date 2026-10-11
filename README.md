@@ -120,6 +120,11 @@ A native Windows app, a quick panel in your tray, and a scriptable command line.
 
 Windows 11, x64; nothing else to install. Settings live in `%LOCALAPPDATA%\DispCtrl`.
 
+### Other platforms
+
+- **Linux** - [Snap Store](https://snapcraft.io/dispctrl-linux) · [every distribution](https://github.com/HaythmKenway/DispCtrl/blob/master/docs/LINUX.md), by [@HaythmKenway](https://github.com/HaythmKenway)
+- **macOS** - coming soon
+
 ## Getting started
 
 1. Open **DispCtrl** from the Start menu. The engine starts with it and puts an icon in the notification area.
