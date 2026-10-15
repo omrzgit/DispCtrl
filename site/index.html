@@ -603,6 +603,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
 .plat .btns{display:flex;gap:8px;margin-top:18px}
 .plat .btns .btn{flex:1;padding:10px 14px;font-size:14px}
 .plat .here{border-color:rgba(139,92,246,.55)}
+.linuxver{font-size:12px;font-weight:600;color:var(--a1);margin-left:4px}
 .alsofor{margin-top:10px;font-size:13px;color:var(--muted)}
 .alsofor a{color:var(--a1);text-decoration:none}
 .alsofor a:hover{text-decoration:underline}
@@ -888,10 +889,10 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
 <span class="p">$</span> dispctrl-linux nightlight 60
 <span class="p">$</span> dispctrl-linux awake for 2h</pre></div>
         <div class="body">
-          <div class="top"><span class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></span><h3>Linux<small>by <a href="https://github.com/HaythmKenway">@HaythmKenway</a> · x86-64 and ARM64</small></h3></div>
+          <div class="top"><span class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></span><h3>Linux <span class="linuxver">1.0.4</span><small>by <a href="https://github.com/HaythmKenway">@HaythmKenway</a> · x86-64 and ARM64</small></h3></div>
           <p>Brightness over DDC/CI and the backlight, night light, unison, keep awake, OLED care, focus mode, presets and hotkeys, from dispctrl-linux, a window and the tray. Most of it needs an X11 session.</p>
-          <div class="tags"><span>Snap</span><span>apt and dnf</span><span>Every distribution</span></div>
-          <div class="btns"><a class="btn primary" href="https://snapcraft.io/dispctrl-linux">Snap Store</a><a class="btn ghost" href="https://github.com/HaythmKenway/DispCtrl/blob/master/docs/LINUX.md">Every distribution</a></div>
+          <div class="tags"><span>.deb</span><span>.rpm</span><span>Snap</span><span>Tarball</span></div>
+          <div class="btns"><a class="btn primary linuxdl" href="https://github.com/HaythmKenway/DispCtrl-linux/releases/latest">Download</a><a class="btn ghost" href="https://github.com/HaythmKenway/DispCtrl-linux">DispCtrl for Linux</a></div>
         </div>
       </div>
     </div>
@@ -1015,9 +1016,9 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
       <div class="card reveal">
         <div class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></div>
         <h3>Linux</h3>
-        <p>DispCtrl for Linux, maintained by <a href="https://github.com/HaythmKenway">@HaythmKenway</a>: brightness over DDC/CI and the backlight, dimming and night light, from a command line and a window.</p>
-        <a class="btn ghost" href="https://snapcraft.io/dispctrl-linux">Get it from the Snap Store</a>
-        <a class="btn ghost" style="margin-top:8px" href="https://github.com/HaythmKenway/DispCtrl/blob/master/docs/LINUX.md">Every distribution</a>
+        <p>DispCtrl for Linux <span class="linuxver">1.0.4</span>, by <a href="https://github.com/HaythmKenway">@HaythmKenway</a>: a .deb, .rpm, snap or tarball for x86-64 and ARM64, or the <a href="https://github.com/HaythmKenway/DispCtrl-linux/blob/master/docs/LINUX.md#from-the-apt-or-dnf-repository">apt and dnf repositories</a>. Brightness, night light, monitor controls, presets and more, from a command line, a window and the tray.</p>
+        <a class="btn ghost linuxdl" href="https://github.com/HaythmKenway/DispCtrl-linux/releases/latest">Download for Linux</a>
+        <a class="btn ghost" style="margin-top:8px" href="https://snapcraft.io/dispctrl-linux">Get it from the Snap Store</a>
       </div>
       <div class="card reveal">
         <span class="badge">New</span>
@@ -1111,7 +1112,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
         </div>
       </div>
       <div><h5>Product</h5><a href="#platforms">Windows, macOS, Linux</a><a href="#features">Features</a><a href="#panel">Quick panel</a><a href="#tour">Tour</a><a href="#cli">Command line</a></div>
-      <div><h5>Download</h5><a href="https://apps.microsoft.com/detail/9PNQWKNRGVR0">Microsoft Store</a><a href="https://github.com/jesvijonathan/DispCtrl/releases/latest">Installer</a><a href="https://github.com/jesvijonathan/DispCtrl/releases">All releases</a><a href="https://jesvijonathan.github.io/DispCtrl-MacOS/">For macOS</a><a href="https://snapcraft.io/dispctrl-linux">For Linux</a><a href="https://github.com/jesvijonathan/DispCtrl/blob/master/docs/CHANGELOG.md">Changelog</a></div>
+      <div><h5>Download</h5><a href="https://apps.microsoft.com/detail/9PNQWKNRGVR0">Microsoft Store</a><a href="https://github.com/jesvijonathan/DispCtrl/releases/latest">Installer</a><a href="https://github.com/jesvijonathan/DispCtrl/releases">All releases</a><a href="https://jesvijonathan.github.io/DispCtrl-MacOS/">For macOS</a><a href="https://github.com/HaythmKenway/DispCtrl-linux/releases/latest">For Linux</a><a href="https://github.com/jesvijonathan/DispCtrl/blob/master/docs/CHANGELOG.md">Changelog</a></div>
       <div><h5>Project</h5><a href="https://github.com/jesvijonathan/DispCtrl">Source code</a><a href="https://github.com/jesvijonathan/DispCtrl/issues">Report an issue</a><a href="https://github.com/jesvijonathan/DispCtrl/tree/master/devices">Device library</a><a href="https://github.com/jesvijonathan/DispCtrl/blob/master/.github/CONTRIBUTING.md">Contributing</a></div>
       <div><h5>More</h5><a href="#support">Donate</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a><a href="mailto:jesvi22j@gmail.com">Contact</a></div>
     </div>
@@ -1405,6 +1406,13 @@ fetch(repo + '/releases?per_page=5').then(r => r.ok ? r.json() : null).then(list
   const setup = asset(/setup\.exe$/i), zip = asset(/(portable|desktop)\.zip$/i);
   if (setup) $('dlSetup').href = setup.browser_download_url;
   if (zip) $('dlZip').href = zip.browser_download_url;
+}).catch(() => {});
+
+// DispCtrl for Linux's latest release, from its own repository.
+fetch('https://api.github.com/repos/HaythmKenway/DispCtrl-linux/releases/latest').then(r => r.ok ? r.json() : null).then(rel => {
+  if (!rel || !rel.tag_name) return;
+  document.querySelectorAll('.linuxver').forEach(e => e.textContent = rel.tag_name.replace(/^v/, ''));
+  document.querySelectorAll('.linuxdl').forEach(e => e.href = rel.html_url);
 }).catch(() => {});
 
 // Device library, read live from the repository's generated index. It is built
