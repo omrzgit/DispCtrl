@@ -584,6 +584,29 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
   /* Hover lifts stick after a tap on a touch screen. */
   .btn:hover,.card:hover,.doc:hover,.way:hover{transform:none}
 }
+/* Every platform: three cards, each with a picture of it at work. */
+.plat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.plat .card{display:flex;flex-direction:column;padding:0;overflow:hidden}
+.plat .shot{height:190px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(180deg,rgba(139,92,246,.16),transparent);border-bottom:1px solid var(--line2)}
+.plat .shot img{width:88%;margin-top:26px;border-radius:10px 10px 0 0;box-shadow:0 18px 40px rgba(0,0,0,.35);border:1px solid var(--line2);border-bottom:0}
+.plat .shot img.alpha{border:0;border-radius:0;box-shadow:none;filter:drop-shadow(0 16px 30px rgba(0,0,0,.35))}
+.plat .shot pre{width:86%;margin:26px 0 0;align-self:end;padding:14px 16px;border-radius:10px 10px 0 0;background:#0a0810;border:1px solid #2c2340;border-bottom:0;color:#ddd5ee;font:12px/1.65 var(--mono);white-space:pre;overflow:hidden}
+.plat .shot pre .c{color:#766c8c}.plat .shot pre .p{color:#c4a6ff}.plat .shot pre .o{color:#9be0b5}
+.plat .body{display:flex;flex-direction:column;flex:1;padding:22px 24px 24px}
+.plat .top{display:flex;align-items:center;gap:12px}
+.plat .lg{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(180deg,#3a3642,#26232d);border:1px solid rgba(255,255,255,.08)}
+.plat .lg svg{width:21px;height:21px}
+.plat h3{margin:0;font-size:19px}
+.plat h3 small{display:block;font-size:12.5px;font-weight:500;color:var(--dim);margin-top:2px}
+.plat p{flex:1;color:var(--muted);font-size:14.5px;margin:14px 0 0}
+.plat .tags{margin-top:14px}
+.plat .btns{display:flex;gap:8px;margin-top:18px}
+.plat .btns .btn{flex:1;padding:10px 14px;font-size:14px}
+.plat .here{border-color:rgba(139,92,246,.55)}
+.alsofor{margin-top:10px;font-size:13px;color:var(--muted)}
+.alsofor a{color:var(--a1);text-decoration:none}
+.alsofor a:hover{text-decoration:underline}
+@media (max-width:900px){.plat{grid-template-columns:1fr}.plat .shot{height:170px}}
 </style>
 </head>
 <body>
@@ -598,7 +621,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
       <a href="#cli">Command line</a>
       <a href="#download">Download</a>
       <a href="#support">Support</a>
-      <a href="https://jesvijonathan.github.io/DispCtrl-MacOS/">Mac</a>
+      <a href="#platforms">macOS &amp; Linux</a>
     </div>
     <div class="navend">
     <a class="navbtn navstar" href="https://github.com/jesvijonathan/DispCtrl" aria-label="DispCtrl on GitHub">
@@ -634,6 +657,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
       </a>
     </div>
     <div class="herover">Latest <b class="vername">v0.2.1</b> · <a class="vernotes" href="https://github.com/jesvijonathan/DispCtrl/releases/latest">What's new</a></div>
+    <div class="alsofor">Also for <a href="https://jesvijonathan.github.io/DispCtrl-MacOS/">macOS</a> and <a href="#platforms">Linux</a></div>
     <div class="trust"><span>No account</span><span>No telemetry</span><span>No admin rights</span></div>
   </div>
   <div class="stack" id="stack" aria-label="DispCtrl's main window and quick panel">
@@ -826,6 +850,51 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
       <div class="gview"><img id="gimg" src="assets/screenshots/displays.png" alt="Displays" loading="lazy"><div class="gdots" id="gdots" aria-hidden="true"></div></div>
     </div>
       <noscript><p class="sub" style="text-align:center;margin:16px auto 0">More screens: <a href="assets/screenshots/brightness.png">brightness</a>, <a href="assets/screenshots/screen-care.png">screen care</a>, <a href="assets/screenshots/presets.png">presets</a>, <a href="assets/screenshots/taskbar.png">taskbar</a>, <a href="assets/screenshots/quick-panel-settings.png">quick panel</a>, <a href="assets/screenshots/hotkeys.png">hotkeys</a>, <a href="assets/screenshots/devices.png">devices</a>, <a href="assets/screenshots/settings.png">settings</a>.</p></noscript>
+  </div>
+</section>
+
+<section id="platforms">
+  <div class="wrap">
+    <div class="head c reveal">
+      <span class="eyebrow">Every desk</span>
+      <h2>Windows, macOS and Linux</h2>
+      <p class="sub">The same idea on every system: one slider for every display, your monitor's own controls, and a command line. One shared device library, so a monitor one person maps works for everyone.</p>
+    </div>
+    <div class="plat">
+      <div class="card here reveal">
+        <span class="badge">You are here</span>
+        <div class="shot"><img src="assets/screenshots/displays.png" alt="DispCtrl for Windows" loading="lazy"></div>
+        <div class="body">
+          <div class="top"><span class="lg"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 5.5 10.5 4.4v7.1H3zm0 13 7.5 1.1v-7H3zm8.5 1.2L21 21v-8.5h-9.5zm0-15.4V11.5H21V3z"/></svg></span><h3>Windows<small>Windows 11 · x64 · WinUI 3</small></h3></div>
+          <p>The original: unison brightness, night light per display, taskbars hidden where you want them, OLED care, a quick panel in the tray and dispctrl.exe.</p>
+          <div class="tags"><span>Microsoft Store</span><span>Installer</span><span>Portable</span></div>
+          <div class="btns"><a class="btn primary" href="#download">Download</a></div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <span class="badge">New</span>
+        <div class="shot"><img class="alpha" src="https://jesvijonathan.github.io/DispCtrl-MacOS/assets/screenshots/hero.png" alt="DispCtrl for macOS: the settings window and the menu bar panel" loading="lazy"></div>
+        <div class="body">
+          <div class="top"><span class="lg"><svg viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.5 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8-1.7 0-3.3 1-4.1 2.5-1.8 3.1-.5 7.6 1.3 10.1.8 1.2 1.8 2.6 3.1 2.5 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.4-.9-2.4-3.6zM14 5.3c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg></span><h3>macOS<small>macOS 26 · Apple silicon and Intel · SwiftUI</small></h3></div>
+          <p>A native menu bar app: every display in step, DDC/CI on Apple silicon, Night Shift and warmth, focus mode, OLED care, pinned windows, the Touch Bar and dispctrl.</p>
+          <div class="tags"><span>Disk image</span><span>Universal</span><span>Open source</span></div>
+          <div class="btns"><a class="btn primary" href="https://jesvijonathan.github.io/DispCtrl-MacOS/">DispCtrl for Mac</a><a class="btn ghost" href="https://github.com/jesvijonathan/DispCtrl-MacOS/releases/latest">Download</a></div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="shot"><pre><span class="c"># a monitor, over DDC/CI</span>
+<span class="p">$</span> dispctrl-linux brightness 60 --ddc 1
+<span class="c"># warmer, and awake for a while</span>
+<span class="p">$</span> dispctrl-linux nightlight 60
+<span class="p">$</span> dispctrl-linux awake for 2h</pre></div>
+        <div class="body">
+          <div class="top"><span class="lg"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></span><h3>Linux<small>by <a href="https://github.com/HaythmKenway">@HaythmKenway</a> · x86-64 and ARM64</small></h3></div>
+          <p>Brightness over DDC/CI and the backlight, night light, unison, keep awake, OLED care, focus mode, presets and hotkeys, from dispctrl-linux, a window and the tray. Most of it needs an X11 session.</p>
+          <div class="tags"><span>Snap</span><span>apt and dnf</span><span>Every distribution</span></div>
+          <div class="btns"><a class="btn primary" href="https://snapcraft.io/dispctrl-linux">Snap Store</a><a class="btn ghost" href="https://github.com/HaythmKenway/DispCtrl/blob/master/docs/LINUX.md">Every distribution</a></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1041,8 +1110,8 @@ footer{margin-top:40px;border-top:1px solid var(--line);background:linear-gradie
           <p class="by">Made by <a href="https://www.jesvi.net">Jesvi Jonathan</a> · <a href="https://github.com/jesvijonathan">GitHub</a> · <a href="mailto:jesvi22j@gmail.com">Email</a></p>
         </div>
       </div>
-      <div><h5>Product</h5><a href="#features">Features</a><a href="#panel">Quick panel</a><a href="#tour">Tour</a><a href="#cli">Command line</a></div>
-      <div><h5>Download</h5><a href="https://apps.microsoft.com/detail/9PNQWKNRGVR0">Microsoft Store</a><a href="https://github.com/jesvijonathan/DispCtrl/releases/latest">Installer</a><a href="https://github.com/jesvijonathan/DispCtrl/releases">All releases</a><a href="https://jesvijonathan.github.io/DispCtrl-MacOS/">For Mac</a><a href="https://github.com/jesvijonathan/DispCtrl/blob/master/docs/CHANGELOG.md">Changelog</a></div>
+      <div><h5>Product</h5><a href="#platforms">Windows, macOS, Linux</a><a href="#features">Features</a><a href="#panel">Quick panel</a><a href="#tour">Tour</a><a href="#cli">Command line</a></div>
+      <div><h5>Download</h5><a href="https://apps.microsoft.com/detail/9PNQWKNRGVR0">Microsoft Store</a><a href="https://github.com/jesvijonathan/DispCtrl/releases/latest">Installer</a><a href="https://github.com/jesvijonathan/DispCtrl/releases">All releases</a><a href="https://jesvijonathan.github.io/DispCtrl-MacOS/">For macOS</a><a href="https://snapcraft.io/dispctrl-linux">For Linux</a><a href="https://github.com/jesvijonathan/DispCtrl/blob/master/docs/CHANGELOG.md">Changelog</a></div>
       <div><h5>Project</h5><a href="https://github.com/jesvijonathan/DispCtrl">Source code</a><a href="https://github.com/jesvijonathan/DispCtrl/issues">Report an issue</a><a href="https://github.com/jesvijonathan/DispCtrl/tree/master/devices">Device library</a><a href="https://github.com/jesvijonathan/DispCtrl/blob/master/.github/CONTRIBUTING.md">Contributing</a></div>
       <div><h5>More</h5><a href="#support">Donate</a><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="terms.html" target="_blank" rel="noopener">Terms</a><a href="mailto:jesvi22j@gmail.com">Contact</a></div>
     </div>
