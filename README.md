@@ -123,7 +123,7 @@ Windows 11, x64; nothing else to install. Settings live in `%LOCALAPPDATA%\DispC
 ### Other platforms
 
 - **Linux** - [Snap Store](https://snapcraft.io/dispctrl-linux) · [every distribution](https://github.com/HaythmKenway/DispCtrl/blob/master/docs/LINUX.md), by [@HaythmKenway](https://github.com/HaythmKenway)
-- **macOS** - [DispCtrl for macOS](https://github.com/jesvijonathan/DispCtrl-macOS): a native menu bar app for macOS 26, Apple silicon and Intel · [website](https://jesvijonathan.github.io/DispCtrl/macos.html)
+- **macOS** - [DispCtrl for macOS](https://github.com/jesvijonathan/DispCtrl-macOS): a native menu bar app for macOS 26, Apple silicon and Intel · [website](https://jesvijonathan.github.io/DispCtrl-MacOS/)
 
 ## Getting started
 
